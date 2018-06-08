@@ -36,7 +36,7 @@ class ControlFLI(object):
                 self.fig, self.ax = plt.subplots()
             else:
                 self.ax = ax
-            ax.imshow(self.data)
+            self.ax.imshow(self.data)
             print("MAX COUNTS:",np.max(self.data))
             plt.pause(0.1)
         print('Done')
